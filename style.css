@@ -1294,7 +1294,6 @@ a:hover{
     max-width: 266px;
     margin-right: 40px;
 }   
-
 .basecom-link,
  .webflow-link {
     color: var(--white);
@@ -1489,8 +1488,9 @@ a:hover{
         line-height: 34px;
     }
     .review-03 {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 35px;
+        padding-bottom: 0;
+        height: 500px;
     }
     .review-03-slider-container {
         flex-direction: column;
@@ -1528,6 +1528,7 @@ a:hover{
     }
     .news_arrows{
         position: static;
+        padding-top: 30px;
     }
     .review-short-right-arrow,
     .review-short-left-arrow{
@@ -1572,7 +1573,7 @@ a:hover{
         margin-top: 60px;
     }
     .automation {
-        padding-top: 90px;
+        padding-top: 35px;
         padding-bottom: 90px;
     }
     .automation-container {
@@ -1615,5 +1616,8 @@ a:hover{
     }
     .content-05-text{
         padding: 25px;
+    }
+    .get-start{
+        white-space: nowrap;
     }
 }

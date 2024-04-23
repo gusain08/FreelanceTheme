@@ -309,12 +309,12 @@
             </div>
             <div class="features-03-wrapper">
                 <div class="features-03-faq-box">
-                    <div class="automation-faq-item">
+                    <div class="automation-faq-item ">
                         <div class="faq-header-03-active">
                             <div class="faq-arrow-03"><img src="https://assets-global.website-files.com/654f79eca832a8f5429cb712/654f79eca832a8f5429cb7bc_Group 1000015814.svg" loading="lazy" alt="" /></div>
                             <div class="faq-header-left"><h1 class="sub-heading-02-semi-bold">Freelancers</h1></div>
                         </div>
-                        <div class="faq-content">
+                        <div class="faq-content open">
                             <p class="body-02-regular mt-20">Create and send professional invoices in minutes, automate payment reminders, and gain real-time insights into your financial health.</p>
                             <a href="contact-01.html" class="learn-more body-01-semi-bold mt-32 w-inline-block">
                                 <p class="download-now-text">Learn More</p>
@@ -775,6 +775,23 @@
         $('.menu-button-2').click(function(){
             $('.w-nav-menu').slideToggle(200);
         });
+        $(document).ready(function(){
+    // Hide all FAQ contents initially
+    $('.automation-faq-item .faq-content').not('.open').hide();
+    
+    // Toggle accordion on click
+    $('.automation-faq-item').click(function(){
+        // Toggle arrow icon
+        $(this).find('.faq-arrow-03 img').toggleClass('rotate');
+        
+        // Toggle FAQ content
+        $(this).find('.faq-content').slideToggle();
+        
+        // Close other FAQ items
+        $('.automation-faq-item').not(this).find('.faq-content').slideUp();
+        $('.automation-faq-item').not(this).find('.faq-arrow-03 img').removeClass('rotate');
+    });
+});
         </script>
   </body>
 </html>
