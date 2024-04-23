@@ -1490,7 +1490,7 @@ a:hover{
     .review-03 {
         padding-top: 35px;
         padding-bottom: 0;
-        height: 500px;
+        height: 540px;
     }
     .review-03-slider-container {
         flex-direction: column;
@@ -1503,8 +1503,8 @@ a:hover{
         line-height: 28px;
     }
     .blogs-03 {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     .sub-heading-01-bold {
         font-size: 26px;
