@@ -14,6 +14,7 @@ html {
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -26,11 +27,11 @@ h1 {
 
 body {
     color: var(--black);
-    /* font-family: Instrumentsans, sans-serif; */
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     font-family: "Instrument Sans", sans-serif;
+    overscroll-behavior: none;
 }
 
 /*Header css*/
@@ -364,8 +365,8 @@ a:active, a:hover {
 .logos-yellow {
     background-color: var(--yellow);
     justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     overflow: hidden;
 }
@@ -587,6 +588,13 @@ a:active, a:hover {
     height: 32px;
     margin-right: 16px;
     display: flex;
+}
+.faq-arrow-03 img{
+    transition: all 0.5s ease-in-out;
+}
+.faq-arrow-03 img.rotate{
+    rotate: 180deg;
+    transition: all 0.5s ease-in;
 }
 .faq-header-left {
     flex: 1;
@@ -1325,6 +1333,7 @@ a:hover{
     .features-03-inner {
         grid-template-columns: 1fr;
         justify-items: center;
+        margin-top:25px;
     }
     .features-03-content-02 {
         grid-template-columns: 1fr;
@@ -1457,8 +1466,8 @@ a:hover{
         grid-template-columns: 1fr 1fr 1fr;
     }
     .features-03 {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .heading-02 {
         font-size: 36px;
@@ -1507,8 +1516,8 @@ a:hover{
         line-height: 28px;
     }
     .blogs-03 {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 45px;
+        padding-bottom: 60px;
     }
     .sub-heading-01-bold {
         font-size: 26px;
@@ -1549,8 +1558,8 @@ a:hover{
         height: auto;
     }
     .content-05 {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 45px;
+        padding-bottom: 45px;
     }
     .content-05-container{
         margin-left: 20px;
@@ -1573,10 +1582,7 @@ a:hover{
     .logos-wrapper {
         grid-template-columns: 1fr 1fr;
     }
-    .features-03 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+
     .features-03-container {
         margin: 20px;
     }
@@ -1588,7 +1594,7 @@ a:hover{
         padding: 20px;
     }
     .features-03-content-02 {
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .automation {
         padding-top: 35px;
