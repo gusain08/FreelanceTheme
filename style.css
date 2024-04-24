@@ -367,6 +367,7 @@ a:active, a:hover {
     padding-top: 45px;
     padding-bottom: 45px;
     display: flex;
+    overflow: hidden;
 }
 .logos-02-container {
     grid-column-gap: 16px;
@@ -380,6 +381,9 @@ a:active, a:hover {
     margin-left: 40px;
     margin-right: 40px;
     display: grid;
+}
+.logos-02-container p{
+    white-space: nowrap;
 }
 .body-01-medium {
     letter-spacing: -.36px;
@@ -1312,7 +1316,7 @@ a:hover{
         line-height: 65px;
     }
     .logos-02-container {
-        grid-template-columns: 1.75fr;
+        display: block;
     }
     .heading-02 {
         font-size: 42px;
@@ -1489,8 +1493,8 @@ a:hover{
     }
     .review-03 {
         padding-top: 35px;
-        padding-bottom: 0;
-        height: 560px;
+        padding-bottom: 150px;
+   
     }
     .review-03-slider-container {
         flex-direction: column;
@@ -1552,6 +1556,12 @@ a:hover{
         margin-left: 20px;
         margin-right: 20px;
     }
+    .features-03-wrapper{
+        display: block;
+    }
+    .home-03-hero{
+        padding-top: 35px;
+    }
 }
 
 
@@ -1564,8 +1574,8 @@ a:hover{
         grid-template-columns: 1fr 1fr;
     }
     .features-03 {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .features-03-container {
         margin: 20px;
